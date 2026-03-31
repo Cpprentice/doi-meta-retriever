@@ -33,7 +33,7 @@ def files_request_mock():
                         "value": "https://i.did.resolve"
                     },
                     "links": {
-                        "self": "http://download.me.here"
+                        "content": "http://download.me.here"
                     }
                 }
             }
