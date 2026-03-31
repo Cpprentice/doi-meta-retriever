@@ -117,7 +117,7 @@ class ZenodoFileFetcher(FileFetcher):
             data = json.load(response)
         files = []
         for entry in data['files']['entries'].values():
-            entry['url'] = entry['links']['self']
+            entry['url'] = entry['links']['content']
             files.append(FileRecord.from_response_dict(entry))
         _ = 42
         return files
