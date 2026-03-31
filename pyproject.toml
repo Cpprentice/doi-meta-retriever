@@ -1,0 +1,20 @@
+[project]
+name = "doi-meta-retriever"
+version = "0.1.0"
+description = "This package is intended to fetch information on the files that are associated with a given DOI"
+readme = "README.md"
+authors = [
+    { name = "Philipp Schmurr", email = "philipp.schmurr@kit.edu" }
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = [
+    "coverage==7.13.4",
+    "pytest==9.0.2"
+]
+
+[build-system]
+requires = ["uv_build>=0.8.12,<0.9.0"]
+build-backend = "uv_build"
